@@ -20,7 +20,7 @@ This module requires Panda3D > 1.10, pyopenvr and a implementation of OpenVR (St
 
 ## Usage
 
-To use panda3d-openvr, first import the p2dopenvr module in your application :
+To use panda3d-openvr, first import the p3dopenvr module in your application :
 
     import p3dopenvr
 
@@ -30,8 +30,6 @@ Then, once an instance of ShowBase is created, instanciate the VR interface and 
     myvr.init()
 
 Once done, the module will enable the VR application layer of OpenVR, create the left and right cameras and configure the rendering system to send the images of each eye to the VR compositor.
-
-Note that SteamVR **must** be already running before you launch your application.
 
 You can create a derived class from P3DOpenVR to provide the implementation of the event handler or to manage the actions, see the samples below.
 
